@@ -1,5 +1,5 @@
 {
-  "name": "@react-select/monorepo",
+  "name": "react-select-a11y",
   "private": true,
   "version": "1.0.0",
   "description": "A Select control built with and for ReactJS",
@@ -103,7 +103,8 @@
     "postinstall": "preconstruct dev && bolt-check",
     "changeset": "changeset",
     "version-packages": "changeset bump",
-    "release": "yarn build && changeset release"
+    "release": "yarn build && changeset release",
+    "prepare": "npm run build"
   },
   "files": [
     "dist",
